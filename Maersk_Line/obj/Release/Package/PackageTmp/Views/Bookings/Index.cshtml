@@ -1,0 +1,72 @@
+﻿@model IEnumerable<Maersk_Line.Models.Booking>
+
+@{
+    ViewBag.Title = "Booking";
+}
+
+<h2>Booking</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ShipID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ContainerID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Time)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Departure)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Destination)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ShipID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ContainerID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Time)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Departure)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Destination)
+        </td>
+        <td>
+        <td>  
+            @Html.ActionLink("Edit", "Edit", new { id = item.BookingID })
+        <td>
+            @Html.ActionLink("Details", "Details", new { id = item.BookingID })
+        <td>
+            @Html.ActionLink("Delete", "Delete", new { id = item.BookingID })
+        </td>
+    </tr>
+}
+
+</table>

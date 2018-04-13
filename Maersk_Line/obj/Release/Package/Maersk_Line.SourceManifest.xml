@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="C:\Users\user\Desktop\Degree SE L3\Sem 2\DDAC\Maersk_Line\Maersk_Line\Maersk_Line\obj\Release\Package\PackageTmp" />
+  <setAcl path="C:\Users\user\Desktop\Degree SE L3\Sem 2\DDAC\Maersk_Line\Maersk_Line\Maersk_Line\obj\Release\Package\PackageTmp" setAclResourceType="Directory" />
+  <setAcl path="C:\Users\user\Desktop\Degree SE L3\Sem 2\DDAC\Maersk_Line\Maersk_Line\Maersk_Line\obj\Release\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
+</sitemanifest>

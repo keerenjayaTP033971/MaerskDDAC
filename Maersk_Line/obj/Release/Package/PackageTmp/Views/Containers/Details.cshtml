@@ -1,0 +1,51 @@
+﻿@model Maersk_Line.Models.Container
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Container</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ContainerName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContainerName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ContainerDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContainerDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ContainerAmount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContainerAmount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ContainerWeight)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContainerWeight)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ContainerID })
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>

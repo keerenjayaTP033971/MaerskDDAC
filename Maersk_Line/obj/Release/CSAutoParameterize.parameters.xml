@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="Maersk_LineContext-Web.config Connection String" description="Maersk_LineContext Connection String used in web.config by the application to access the database." defaultValue="Server=tcp:meowserver.database.windows.net,1433;Initial Catalog=meowDB;Persist Security Info=False;User ID=haro66;Password=Ntd11322;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\user\\Desktop\\Degree\ SE\ L3\\Sem\ 2\\DDAC\\Maersk_Line\\Maersk_Line\\Maersk_Line\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Maersk_LineContext']/@connectionString" />
+  </parameter>
+</parameters>

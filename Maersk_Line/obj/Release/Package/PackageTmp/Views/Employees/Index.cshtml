@@ -1,0 +1,42 @@
+﻿@model IEnumerable<Maersk_Line.Models.Employee>
+
+@{
+    ViewBag.Title = "Employee";
+}
+
+<h2>Employee</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.EmployeeName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmployeePass)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.EmployeeName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EmployeePass)
+        </td>
+        <td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.EmployeeID })
+        <td>
+            @Html.ActionLink("Details", "Details", new { id = item.EmployeeID })
+        <td>
+            @Html.ActionLink("Delete", "Delete", new { id = item.EmployeeID })
+        </td>
+    </tr>
+}
+
+</table>
